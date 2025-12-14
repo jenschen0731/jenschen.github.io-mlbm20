@@ -1,0 +1,192 @@
+:root{
+  --accent:#4f77e6;
+  --muted:#000000;
+  --card:#ffffff;
+}
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  font-family:-apple-system,BlinkMacSystemFont,'Noto Sans TC','Helvetica Neue',Arial;
+  margin:0;
+  background:#a2cada;
+  color:#0f1724;
+}
+
+header{
+  background:linear-gradient(135deg,var(--accent),#00529e);
+  color:white;
+  padding:48px 20px;
+}
+
+.container{
+  max-width:1000px;
+  margin:0 auto;
+  padding:24px;
+}
+
+.hero{
+  display:flex;
+  gap:20px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.hero .text{
+  flex:1;
+}
+
+h1{
+  font-size:2.2rem;
+  margin:0 0 8px;
+}
+
+p.lead{
+  margin:0;
+  color:rgba(255,255,255,0.95);
+}
+
+.cta{
+  margin-top:16px;
+}
+
+.btn{
+  display:inline-block;
+  padding:10px 16px;
+  border-radius:10px;
+  background:rgb(255, 255, 255);
+  color:var(--accent);
+  font-weight:600;
+  text-decoration:none;
+}
+
+nav{
+  margin-top:16px;
+}
+
+nav a{
+  color:rgba(255,255,255,0.9);
+  margin-right:12px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+  margin-top:24px;
+}
+
+@media (max-width:800px){
+  .grid{
+    grid-template-columns:1fr;
+  }
+}
+
+.card{
+  background:var(--card);
+  border-radius:12px;
+  padding:18px;
+  box-shadow:0 6px 18px rgba(15,23,36,0.06);
+}
+
+.section-title{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+.muted{
+  color:var(--muted);
+}
+
+.team-list{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:12px;
+}
+
+.member{
+  background:#fff;
+  padding: 10px;
+  border-radius:10px;
+  min-width:140px;
+  flex:1 1 140px;
+}
+
+.achievements ul{
+  padding-left:18px;
+}
+
+footer{
+  padding:28px 0;
+  color:var(--muted);
+  text-align:center;
+}
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:8px;
+}
+
+.gallery img{
+  width:100%;
+  height:160px;
+  object-fit:cover;
+  border-radius:8px;
+}
+
+@media (max-width:800px){
+  .gallery{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+.join-form label{
+  display:block;
+  margin-top:8px;
+  font-weight:600;
+}
+
+.join-form input,
+.join-form textarea{
+  width:100%;
+  padding:10px;
+  border-radius:8px;
+  border:1px solid #e6eef9;
+  margin-top:6px;
+}
+
+.small{
+  font-size:0.9rem;
+  color:var(--muted);
+}
+
+
+img {
+  width: 100%;
+  height: auto;
+}
+img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+
+
+.image-container {
+  width: 80%;       /* 容器寬度，百分比隨螢幕縮放 */
+  max-width: 600px; /* 最大寬度 */
+  margin: 0 auto;   /* 水平置中 */
+}
+
+.image-container img {
+  width: 100%;      /* 跟隨父容器寬度 */
+  height: auto;     /* 高度自動，保持比例 */
+  display: block;   /* 避免底部空白 */
+}
